@@ -1,0 +1,3 @@
+%{
+  "standard": {:git, "https://gitlab.com/Theopse/standard.git", "a640e8d35eb002439fda43dc6ba1c8cc0aeffa57", [branch: :Development]},
+}
