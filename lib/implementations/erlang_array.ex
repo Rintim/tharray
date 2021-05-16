@@ -30,7 +30,7 @@ defmodule Array.Implementations.ErlangArray do
     if index >= length do
       :error
     else
-      {:ok, :array.get(contents, index)}
+      {:ok, :array.get(index, contents)}
     end
   end
 
@@ -104,7 +104,7 @@ defmodule Array.Implementations.ErlangArray do
       if index < 0 do
         :array.get(index + length, contents)
       else
-        :array.get(contents, index)
+        :array.get(index, contents)
       end
     end
 
